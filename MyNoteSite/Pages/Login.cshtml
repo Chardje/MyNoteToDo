@@ -1,0 +1,15 @@
+﻿@page
+@model LoginModel
+@{
+    ViewData["Title"] = "Login";
+}
+<h1>@ViewData["Title"]</h1>
+
+<form method="POST" asp-action="Login">
+    Логін:<br>
+    <input type='text' name='Login'><br>
+    Пароль:<br>
+    <input type='password' name='Password'><br>
+    <input type="submit" value='Відправити'>
+</form>
+<a asp-page="/Reg">Registration</a>
